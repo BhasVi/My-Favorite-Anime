@@ -1,0 +1,193 @@
+/* @font-face {
+    font-family: segovia;
+    src: url(./font/Segovia\ DEMO.ttf);
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: segovia; */
+    font-family: "Raleway", sans-serif;
+}
+
+.wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+.container{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background, .foreground{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    object-fit: stretch;
+    z-index: -1;
+}
+
+.background{
+    transform: translateZ(-40px) scale(5.524);
+}
+
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+
+/* h1{
+    position: absolute;
+    top: 3rem;
+    letter-spacing: 4px;
+    font-size: 7rem;
+    color: rgba(169, 222, 255, 0.452);
+    text-shadow: 0 0 10px rgb(0,0,0,0.3);
+    margin: 0;
+} */
+
+section{
+    background: linear-gradient(139deg, rgb(2, 106, 122) 0.00%, rgb(121, 92, 142) 100.00%, rgb(57, 95, 107) 100.00%);
+    color: white;
+    padding: 5rem 0px;
+    padding-bottom: 2rem;
+}
+
+.secHeading{
+    font-size: 5rem;
+    padding: 0px 10rem;
+}
+
+.text{
+    font-size: 1.25rem;
+    padding: 0 8rem;
+    margin: 5rem 0;
+}
+
+.bg1{
+    background-image: url(/images/img1.jpg);
+}
+
+.bg2{
+    background-image: url(/images/img2.jpeg);
+}
+
+.bg3{
+    background-image: url(/images/img3.jpg);
+}
+
+.bg{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5rem 2.5rem;
+    /* background-color: white; */
+    background: linear-gradient(150deg, rgb(215, 223, 252) 15.53%, rgb(251, 251, 255) 93.50%, rgb(244, 246, 254) 97.35%);
+    color: rgb(97, 97, 97);
+    border-radius: 8px;
+    border: 1px solid #A0DEFF;
+    
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    background:#000;
+    overflow:hidden;
+  }
+  
+  .center{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:prespective(100PX) translate(-50%,-50%);
+    transform:skewY(15deg);
+    transition:0.5s;
+  }
+  
+  .center:hover{
+    transform:prespective(100PX) translate(-50%,-50%);
+    transform:skewY(0deg);
+  }
+  
+  .center h1 span{
+    position:absolute;
+    top:0;
+    left:0;
+    transform:translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    text-transform:uppercase;
+    font-size:4em;
+    color:#fff;
+    transform-style:preserve-3d;
+    transition:0.8s;
+  }
+  .center h1 span:nth-child(1){
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  }
+  
+  
+  
+  .center h1 span:nth-child(2){
+    color:#3182c99f;
+    transform:translate(-50%,-50%) skewX(-60deg);
+    left:-38px;
+    clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
+  }
+  
+  .center h1 span:nth-child(3){
+    transform:translate(-50%,-50%) skewY(0deg);
+    left:-76px;
+    clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
+  }
+  
+  .center:hover h1 span:nth-child(2), 
+  .center:hover h1 span:nth-child(3){
+    transform:translate(-50%,-50%) skewX(0deg);
+    left:0;
+    color:#fff;
+  }
+
+
+.intials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.BhasVish{
+    width: 250px;
+    height: 250px;
+    transform: translateX(-20px);
+}
+
+.copyright{
+    padding-top: 0.8em;
+    width: 30px;
+    width: 30px;
+}
